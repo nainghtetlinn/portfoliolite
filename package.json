@@ -1,0 +1,27 @@
+{
+  "name": "portfolio-lite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss src/styles.css -o public/output.css -w",
+    "deploy": "gh-pages -d public"
+  },
+  "keywords": [
+    "portfolio",
+    "frontend"
+  ],
+  "author": "naing htet linn",
+  "license": "ISC",
+  "homepage": "https://nainghtetlinn.github.io/portfoliolite",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.2",
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.23"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}

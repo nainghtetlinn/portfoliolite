@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Roboto+Mono:ital,wght@1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --navy: #0a192f;
+    --light-navy: #112240;
+    --green: #64ffda;
+    --dark-slate: #495670;
+    --slate: #8892b0;
+    --lightest-slate: #ccd6f6;
+  }
+  * {
+    font-family: 'Quicksand', sans-serif;
+  }
+  html {
+    @apply scroll-smooth;
+  }
+  html::-webkit-scrollbar {
+    width: 1vw;
+  }
+  html::-webkit-scrollbar-thumb {
+    background-color: var(--dark-slate);
+    border-radius: 5px;
+  }
+  /* html::-webkit-scrollbar-track {
+    background-color: var(--navy);
+  } */
+}
+
+@layer utilities {
+  .textOutline {
+    -webkit-text-stroke: 1px var(--green);
+    -webkit-text-fill-color: transparent;
+  }
+  .badge {
+    @apply inline-block px-2 mr-1 rounded-full text-xs border-skin-highlight border-2 text-white;
+  }
+}
+
+#navOpen:checked ~ div label .one {
+  transform: rotate(-45deg);
+}
+#navOpen:checked ~ div label .two {
+  opacity: 0;
+}
+#navOpen:checked ~ div label .three {
+  transform: rotate(45deg);
+}
+.btn-hire::before,
+.btn-hire::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 3px solid var(--green);
+  transform: skewX(-15deg);
+  transition: all 200ms ease-in;
+}
+
+.btn-hire:hover::before {
+  transform: translate(-5px, -5px) skewX(-15deg);
+}
+.btn-hire:hover::after {
+  transform: translate(5px, 5px) skewX(-15deg);
+}
+.content-img {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vh), 0% 100%);
+}
+
+@media (min-width: 768px) {
+  .content-img {
+    clip-path: polygon(0 0, 100% 0, 83% 100%, 0% 100%);
+  }
+}
