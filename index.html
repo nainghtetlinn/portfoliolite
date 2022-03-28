@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naing-htet-linn</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body class="bg-skin-navy">
+    <div class="container mx-auto xl:max-w-7xl relative">
+      <header class="sticky top-0 bg-skin-light-navy z-20">
+        <div class="px-5 sm:flex sm:justify-between sm:items-center">
+          <input type="checkbox" class="peer hidden" id="navOpen" />
+          <div class="flex items-center justify-between py-3">
+            <a href="#" class="text-skin-highlight flex items-center space-x-2"
+              ><div>
+                <i class="bi bi-layout-wtf text-xl lg:text-3xl"></i>
+              </div>
+              <span class="text-xl lg:text-2xl">Naing</span></a
+            >
+
+            <label
+              for="navOpen"
+              class="w-6 h-5 flex flex-col justify-between cursor-pointer sm:hidden"
+            >
+              <div
+                class="one h-[3px] bg-skin-highlight rounded-full duration-300 ease-in origin-right transition-transform"
+              ></div>
+              <div
+                class="two h-[3px] bg-skin-highlight rounded-full duration-300 ease-in origin-right transition-opacity"
+              ></div>
+              <div
+                class="three h-[3px] bg-skin-highlight rounded-full duration-300 ease-in origin-right transition-transform"
+              ></div>
+            </label>
+          </div>
+
+          <nav
+            class="sm:hidden overflow-hidden h-0 peer-checked:h-[calc(42px*4)] transition-all duration-300"
+          >
+            <ul>
+              <li>
+                <a
+                  class="text-skin-secondary inline-block py-2 border-b-2 border-transparent hover:text-skin-highlight hover:border-skin-highlight transition-all duration-300"
+                  href="#about"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-skin-secondary inline-block py-2 border-b-2 border-transparent hover:text-skin-highlight hover:border-skin-highlight transition-all duration-300"
+                  href="#service"
+                  >Service</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-skin-secondary inline-block py-2 border-b-2 border-transparent hover:text-skin-highlight hover:border-skin-highlight transition-all duration-300"
+                  href="#experience"
+                  >Experience</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-skin-secondary inline-block py-2 border-b-2 border-transparent hover:text-skin-highlight hover:border-skin-highlight transition-all duration-300"
+                  href="#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <nav class="hidden sm:block">
+            <ul class="flex space-x-3 lg:text-xl">
+              <li>
+                <a
+                  class="text-skin-secondary inline-block py-5 border-b-2 border-transparent hover:text-skin-highlight hover:border-skin-highlight transition-all duration-300"
+                  href="#about"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-skin-secondary inline-block py-5 border-b-2 border-transparent hover:text-skin-highlight hover:border-skin-highlight transition-all duration-300"
+                  href="#service"
+                  >Service</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-skin-secondary inline-block py-5 border-b-2 border-transparent hover:text-skin-highlight hover:border-skin-highlight transition-all duration-300"
+                  href="#experience"
+                  >Experience</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-skin-secondary inline-block py-5 border-b-2 border-transparent hover:text-skin-highlight hover:border-skin-highlight transition-all duration-300"
+                  href="#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section
+        class="min-h-[50vh] py-20 px-2 md:px-5 flex flex-col justify-evenly items-center md:flex-row md:justify-around md:gap-6"
+      >
+        <div
+          class="max-w-sm w-full lg:max-w-lg flex justify-center items-center"
+        >
+          <img src="./undraw_startup_life_re_8ow9 (1).svg" alt="avatar" />
+        </div>
+
+        <div
+          class="max-w-sm w-full lg:max-w-lg py-10 flex flex-col justify-center items-start prose"
+        >
+          <h4 class="text-skin-secondary md:text-lg lg:text-xl">Hey, I'm</h4>
+          <h1
+            class="lg:text-5xl font-roboto text-transparent bg-300 bg-gradient-to-r from-skin-highlight via-skin-lightest-slate to-[#c553ff] bg-clip-text animate-text"
+          >
+            Naing Htet Linn
+          </h1>
+          <h6 class="text-skin-secondary md:text-lg">
+            A passionate
+            <span class="text-skin-highlight">frontend developer</span> from
+            Myanmar
+          </h6>
+          <button
+            class="btn-hire relative mt-5 ml-2 px-5 py-1 text-skin-highlight font-semibold lg:text-xl"
+          >
+            Contact me
+          </button>
+        </div>
+      </section>
+      <section
+        id="about"
+        class="min-h-[50vh] py-20 px-2 md:px-5 flex flex-col justify-evenly items-center md:flex-row"
+      >
+        <div
+          class="max-w-sm w-full lg:max-w-lg py-10 flex flex-col items-start prose"
+        >
+          <h2 class="text-3xl lg:text-4xl mt-0 font-bold text-skin-secondary">
+            Who I am
+          </h2>
+          <p class="text-skin-secondary md:text-lg lg:max-w-md">
+            Hi I am naing , first year student
+            <a
+              class="font-bold text-skin-highlight no-underline"
+              href="http://www.tutaunggyi.edu.mm/?lang=en"
+              target="_blank"
+              >@TTU</a
+            >
+            , I have serious passion for web development, UI-design and
+            animations.
+          </p>
+          <div class="flex items-center space-x-4">
+            <a
+              class="text-skin-secondary hover:text-skin-accent text-xl"
+              href="https://twitter.com/Naing_95"
+              aria-label="Twitter"
+            >
+              <i class="bi bi-twitter"></i>
+            </a>
+
+            <a
+              class="text-skin-secondary hover:text-skin-accent text-xl"
+              href="https://www.linkedin.com/in/naing-htet-linn-111252228/"
+              aria-label="Linkden"
+            >
+              <i class="bi bi-linkedin"></i>
+            </a>
+
+            <a
+              class="text-skin-secondary hover:text-skin-accent text-xl"
+              href="https://github.com/nainghtetlinn"
+              aria-label="Github"
+            >
+              <i class="bi bi-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex justify-center items-center">
+          <div class="max-w-lg">
+            <img
+              class="object-cover object-center w-full h-64 rounded-md shadow"
+              src="https://images.unsplash.com/photo-1484399172022-72a90b12e3c1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- <div
+            class="textOutline absolute top-1/2 md:-translate-y-full left-0 text-8xl sm:text-9xl font-roboto opacity-50 -z-10"
+          >
+            ABOUT
+          </div> -->
+      </section>
+      <section id="service" class="min-h-[80vh] px-5">
+        <h1 class="text-skin-highlight text-3xl font-bold">Services</h1>
+        <div class="w-full py-12">
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div class="bg-skin-light-navy p-3 rounded">
+              <span class="text-skin-highlight text-3xl"
+                ><i class="bi bi-code-slash"></i
+              ></span>
+
+              <h1 class="mt-4 text-xl font-semibold text-white">Clean Code</h1>
+
+              <p class="mt-2 text-gray-400">
+                As I have enought experience in coding, I can write a super
+                clean code. In the future, you've to hired another developer to
+                make changes the website, clean code can help the developer to
+                understand the code fast.
+              </p>
+            </div>
+
+            <div class="bg-skin-light-navy p-3 rounded">
+              <span class="text-skin-highlight text-3xl"
+                ><i class="bi bi-phone"></i
+              ></span>
+
+              <h1 class="mt-4 text-xl font-semibold text-white">
+                Fully Responsive Components
+              </h1>
+
+              <p class="mt-2 text-gray-400">
+                As I used the most famous framework React.js, your website will
+                be made up with fully responsive components. Also the whole
+                website will be fullly responsive for different devices.
+              </p>
+            </div>
+
+            <div class="bg-skin-light-navy p-3 rounded">
+              <span class="text-skin-highlight text-3xl"
+                ><i class="bi bi-palette"></i
+              ></span>
+
+              <h1 class="mt-4 text-xl font-semibold text-white">
+                Easy Customizable Color
+              </h1>
+
+              <p class="mt-2 text-gray-400">
+                I can make the website easy customizable in color palette so if
+                you want to make your website more redish, you just need to
+                change the colors in the one place. But for customizing the
+                components you still need developer to do so.
+              </p>
+            </div>
+
+            <div class="bg-skin-light-navy p-3 rounded">
+              <span class="text-skin-highlight text-3xl"
+                ><i class="bi bi-moon-stars"></i
+              ></span>
+
+              <h1 class="mt-4 text-xl font-semibold text-white">Dark Mode</h1>
+
+              <p class="mt-2 text-gray-400">
+                Dark mode is getting a must features in every website. I can
+                make the website not just in two dark and light mode plus I can
+                also set the website according to the user's system.
+              </p>
+            </div>
+
+            <div class="bg-skin-light-navy p-3 rounded">
+              <span class="text-skin-highlight text-3xl"
+                ><i class="bi bi-gear"></i
+              ></span>
+
+              <h1 class="mt-4 text-xl font-semibold text-white">
+                Optimization
+              </h1>
+
+              <p class="mt-2 text-gray-400">
+                With many features the website may be slow which is bad for user
+                experience but don't worry I can also make the website more
+                faster and smooth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="experience" class="min-h-[80vh] px-5">
+        <h1 class="text-skin-highlight text-3xl font-bold">Experience</h1>
+        <div class="text-skin-secondary my-4 rounded">
+          <h2 class="py-4">
+            Althought I don't have any job experience I have finished some
+            projects.
+          </h2>
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <article class="rounded overflow-hidden bg-skin-light-navy">
+              <div class="max-w-lg">
+                <a href="https://gueess.vercel.app/"
+                  ><img
+                    class="object-cover object-center w-full h-64"
+                    src="./pics/gueess.png"
+                    alt="Gueess game photo"
+                /></a>
+              </div>
+              <div class="p-3">
+                <h2 class="text-white font-semibold text-lg mb-3">
+                  Gueess game
+                </h2>
+
+                <div class="flex justify-between">
+                  <div class="shrink-0 mr-2">Technology -</div>
+                  <div>
+                    <span class="badge">NextJs</span>
+                    <span class="badge">Tailwindcss</span>
+                    <span class="badge">Redux</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="rounded overflow-hidden bg-skin-light-navy">
+              <div class="max-w-lg">
+                <a href="https://target-within.vercel.app/"
+                  ><img
+                    class="object-cover object-center w-full h-64"
+                    src="./pics/target-within.png"
+                    alt="Target within photo"
+                /></a>
+              </div>
+              <div class="p-3">
+                <h2 class="text-white font-semibold text-lg mb-3">
+                  Target within
+                </h2>
+                <div class="flex justify-between">
+                  <div class="shrink-0 mr-2">Technology -</div>
+                  <div>
+                    <span class="badge">NextJs</span>
+                    <span class="badge">Tailwindcss</span>
+                    <span class="badge">Context-api</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="rounded overflow-hidden bg-skin-light-navy">
+              <div class="max-w-lg">
+                <a href="https://react-space-tourism-by-naing.netlify.app/"
+                  ><img
+                    class="object-cover object-center w-full h-64"
+                    src="./pics/space-tourism.png"
+                    alt="Space tourism photo"
+                /></a>
+              </div>
+              <div class="p-3">
+                <h2 class="text-white font-semibold text-lg mb-3">
+                  Space tourism
+                </h2>
+                <div class="flex justify-between">
+                  <div class="shrink-0 mr-2">Technology -</div>
+                  <div>
+                    <span class="badge">ReactJs</span>
+                    <span class="badge">ReactRouterDom</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="rounded overflow-hidden bg-skin-light-navy">
+              <div class="max-w-lg">
+                <a href="https://calculator-tailwind.netlify.app/"
+                  ><img
+                    class="object-cover object-center w-full h-64"
+                    src="./pics/calculator.png"
+                    alt="Space tourism photo"
+                /></a>
+              </div>
+              <div class="p-3">
+                <h2 class="text-white font-semibold text-lg mb-3">
+                  Tailwind calculator
+                </h2>
+                <div class="flex justify-between">
+                  <div class="shrink-0 mr-2">Technology -</div>
+                  <div>
+                    <span class="badge">Javascript</span>
+                    <span class="badge">Tailwindcss</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="rounded overflow-hidden bg-skin-light-navy">
+              <div class="max-w-lg">
+                <a href="https://change-navbar-active-on-page.netlify.app/"
+                  ><img
+                    class="object-cover object-center w-full h-64"
+                    src="./pics/coolnavbareffect.png"
+                    alt="Space tourism photo"
+                /></a>
+              </div>
+              <div class="p-3">
+                <h2 class="text-white font-semibold text-lg mb-3">
+                  Cool navbar effect
+                </h2>
+                <div class="flex justify-between">
+                  <div class="shrink-0 mr-2">Technology -</div>
+                  <div>
+                    <span class="badge">Javascript</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="rounded overflow-hidden bg-skin-light-navy">
+              <div class="max-w-lg">
+                <a href="https://searchandreplace.netlify.app/"
+                  ><img
+                    class="object-cover object-center w-full h-64"
+                    src="./pics/searchandreplace.png"
+                    alt="Space tourism photo"
+                /></a>
+              </div>
+              <div class="p-3">
+                <h2 class="text-white font-semibold text-lg mb-3">
+                  Search and replace
+                </h2>
+                <div class="flex justify-between">
+                  <div class="shrink-0 mr-2">Technology -</div>
+                  <div>
+                    <span class="badge">Javascript</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="px-5 my-12">
+        <div
+          class="bg-skin-light-navy rounded max-w-screen-md mx-auto overflow-hidden md:flex md:items-center"
+        >
+          <div class="content-img min-h-[240px]">
+            <img
+              src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt="computer photo"
+            />
+          </div>
+          <div class="p-3 shrink-0">
+            <h1 class="text-skin-highlight font-bold text-3xl text-center mb-6">
+              Content
+            </h1>
+            <div class="flex items-center">
+              <h3 class="text-skin-secondary text-lg mr-6">Email -</h3>
+              <p class="text-skin-highlight">Something@gmail.com</p>
+            </div>
+            <div class="flex items-center">
+              <h3 class="text-skin-secondary text-lg mr-6">Twitter -</h3>
+              <p class="text-skin-highlight">Naing_95</p>
+            </div>
+            <div class="flex items-center">
+              <h3 class="text-skin-secondary text-lg mr-6">LinkedIn -</h3>
+              <p class="text-skin-highlight">naing-htet-linn-111252228</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="bg-skin-highlight">
+        <p class="text-skin-navy text-lg font-semibold text-center p-3">
+          Naing Htet Linn | 2022
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
